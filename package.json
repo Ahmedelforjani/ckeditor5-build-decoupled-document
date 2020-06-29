@@ -97,5 +97,9 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-horizontal-line": "^20.0.0",
+    "@ckeditor/ckeditor5-page-break": "^20.0.0"
   }
 }
