@@ -37,11 +37,15 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
+import TodoList from '@ckeditor/ckeditor5-list/src/todolist';
 
 export default class DecoupledEditor extends DecoupledEditorBase {}
 
 // Plugins to include in the build.
 DecoupledEditor.builtinPlugins = [
+	TodoList,
+	HorizontalLine,
 	Essentials,
 	Alignment,
 	FontSize,
@@ -80,8 +84,9 @@ DecoupledEditor.defaultConfig = {
 	toolbar: {
 		items: [
 			'heading',
+			'horizontalLine',
+			'todoList',
 			'|',
-			'fontfamily',
 			'fontsize',
 			'fontColor',
 			'fontBackgroundColor',
